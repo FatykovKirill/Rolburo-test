@@ -1,0 +1,38 @@
+// @import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$main-color-text: #282828;
+$second-color-text: #818181;
+$green-color: #00A55A;
+
+@font-face {
+  font-family: 'MonstserratRegular';
+  src: url('../fonts/Montserrat-Regular.woff')format('woff');
+  src: url('../fonts/Montserrat-Regular.woff2')format('woff2');
+}
+
+@font-face {
+  font-family: 'MonstserratBold';
+  src: url('../fonts/Montserrat-Bold.woff')format('woff');
+  src: url('../fonts/Montserrat-Bold.woff2')format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: $main-color-text;
+  font-family: 'MonstserratRegular';
+
+  section {
+    margin-top: 124px;
+  }
+}
+
+@import 'blocks/requisites.scss';
+@import 'blocks/office.scss';
+@import 'blocks/ourband.scss';
+@import 'blocks/contact.scss';

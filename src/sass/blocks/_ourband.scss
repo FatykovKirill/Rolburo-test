@@ -1,0 +1,79 @@
+.ourband {
+  &-title {
+    font-size: 48px;
+    font-family: 'MonstserratBold';
+    margin-bottom: 0;
+  }
+
+  &-subtitle {
+    font-size: 18px;
+    color: $second-color-text;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .swiper {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+
+    .swiper-pagination-band {
+      --swiper-pagination-progressbar-size: 8px;
+      --swiper-pagination-color: #00A55A;
+      --swiper-pagination-progressbar-bg-color: #F2F2F2;
+      top: 90%;
+    }
+
+    .swiper-prev-band,
+    .swiper-next-band {
+      --swiper-navigation-color: #00A55A;
+      --swiper-theme-color: #D9D9D9;
+      --swiper-navigation-size: 16px;
+    }
+  }
+
+  .swiper-wrapper {
+    height: 568px;
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  .personal {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-img {
+      background-color: #FAFAFA;
+
+      img {
+        width: 100%;
+      }
+    }
+
+
+    &-info {
+      border: 1px solid #D9D9D9;
+      border-top: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px 32px 0 32px;
+      height: 124px;
+
+      .name {
+        color: $main-color-text;
+        font-family: 'MonstserratBold';
+        font-size: 16px;
+      }
+
+      .position {
+        margin-top: 8px;
+        color: $second-color-text;
+        font-size: 14px;
+      }
+    }
+  }
+}

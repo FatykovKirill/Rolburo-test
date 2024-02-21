@@ -1,0 +1,199 @@
+doctype html
+html(lang="en")
+  link(rel="stylesheet", href="styles/index.css")
+  link( rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    body
+      main
+        section(class="contact container")
+          .row
+            .col
+              h2 Контакты
+          .row
+            .col.map-container 
+              .map(id="map")
+              .map-place
+                  svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path(d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    path(d="M12 16V12" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    path(d="M12 8H12.01" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    p Вход в офис находится на углу здания со стороны Ленинградского проспекта на пересечении с ул. Балтийская.
+              .map-info
+                  h3 Контакты
+                  .map-info-main
+                    .main-item
+                      .tel
+                        span.tel-value 8-900-000-00-00
+                        span.tel-info Москва
+                      .tel
+                        span.tel-value 8-900-000-00-00
+                        span.tel-info Россия
+                      button.icon-box
+                        svg(class="svg-copy-dims" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(fill="none" d="M19.1429 8H9.85714C8.83147 8 8 8.83147 8 9.85714V19.1429C8 20.1685 8.83147 21 9.85714 21H19.1429C20.1685 21 21 20.1685 21 19.1429V9.85714C21 8.83147 20.1685 8 19.1429 8Z" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                          path(d="M4.85714 16C3.83571 16 3 15.1643 3 14.1429V4.85714C3 3.83571 3.83571 3 4.85714 3H14.1429C15.1643 3 16 3.83571 16 4.85714" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    .main-item 
+                      .mail
+                       .mail-value metall-market@mail.ru
+                       .mail-time Ежедневно 9:00 — 18:00
+                      button.icon-box
+                        svg(class="svg-copy-dims" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                          path(fill="none" d="M19.1429 8H9.85714C8.83147 8 8 8.83147 8 9.85714V19.1429C8 20.1685 8.83147 21 9.85714 21H19.1429C20.1685 21 21 20.1685 21 19.1429V9.85714C21 8.83147 20.1685 8 19.1429 8Z" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                          path(d="M4.85714 16C3.83571 16 3 15.1643 3 14.1429V4.85714C3 3.83571 3.83571 3 4.85714 3H14.1429C15.1643 3 16 3.83571 16 4.85714" stroke="#818181" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    .main-item
+                      .adress
+                        .adress-header Адрес
+                        .adress-value 123456, г. Москва, ул. Ленина 3А, помещ. 2-7
+                    .main-item 
+                      .timework
+                        .timework-header Время работы
+                        .timework-value Ежедневно 9:00 — 18:00
+                  .map-info-footer
+                    a(href="#" download class="map-down")
+                      .icon-box
+                        img(src="images/sprite.svg#download" class="svg-download-dims" alt="download")
+                        span Карта проезда
+                    a(href="tel:#" class="order-tel")
+                      svg(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16")
+                        path(d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z")
+                      span Заказать звонок
+        section(class="office container")
+         .swiper.mysw
+          .swiper-wrapper
+            .swiper-slide
+              img(src="images/office-1.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-2.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-3.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-1.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-2.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-3.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-1.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-2.webp" atl='office')
+            .swiper-slide
+              img(src="images/office-3.webp" atl='office')
+          .swiper-pagination
+          .swiper-button-next
+          .swiper-button-prev
+        section(class="ourband container")
+          .row
+            .col-md-8
+              h3(class="ourband-title") Наша команда
+              p(class="ourband-subtitle") Металл-Маркет — это команда профессионалов, влюбленных в свое дело. Уверены, что развитие компании начинается с развития ее сотрудников.
+          .swiper.swiper-band
+            .swiper-wrapper
+              .swiper-slide 
+                .personal
+                  .personal-img
+                    img(src="images/band-1.webp", alt="band")
+                  .personal-info
+                    .name Ворончихин Сергей Вячеславович
+                    .position Директор
+              .swiper-slide 
+                .personal
+                  .personal-img
+                    img(src="images/band-2.webp", alt="band")
+                  .personal-info
+                    .name Ситникова Александра Константиновна
+                    .position Офис-менеджер
+              .swiper-slide 
+                .personal
+                  .personal-img
+                    img(src="images/band-3.webp", alt="band")
+                  .personal-info
+                    .name Лазарева Валерия Максимовна
+                    .position Бухгалтер
+              .swiper-slide 
+                .personal
+                  .personal-img
+                    img(src="images/band-4.webp", alt="band")
+                  .personal-info
+                    .name Наумов Илья Семёнович
+                    .position Руководитель отдела продаж
+              .swiper-slide 
+                .personal
+                  .personal-img
+                    img(src="images/band-1.webp", alt="band")
+                  .personal-info
+                    .name Ворончихин Сергей Вячеславович
+                    .position Директор
+              .swiper-slide 
+                .personal
+                  .personal-img
+                    img(src="images/band-2.webp", alt="band")
+                  .personal-info
+                    .name Ситникова Александра Константиновна
+                    .position Офис-менеджер
+              .swiper-slide 
+                .personal
+                  .personal-img
+                    img(src="images/band-3.webp", alt="band")
+                  .personal-info
+                    .name Лазарева Валерия Максимовна
+                    .position Бухгалтер
+              .swiper-slide 
+            .swiper-pagination-band
+              .swiper-next-band
+              .swiper-prev-band
+        section(class="requisites container")
+         .row
+          .col-xxl-8
+            h3(class="requisites-title" ) Реквизиты
+            p(class="requisites-subtitle" ) Металл-Маркет — компания, которая dolor sit amet consectetur. Ac sem nisi nullam mi odio. Justo eu egestas arcu rhoncus et. Eleifend morbi sit proin sed proin. Mattis purus sit malesuada in praesent ac nisi convallis. Lorem ipsum dolor sit amet. 
+            table(class="table table-bordered align-middle")
+              tbody
+                tr
+                  th Полное наименование
+                  td Металл-Маркет
+                tr(class="adress")
+                  th Юридический адрес
+                  td 
+                    .copy-adress
+                      p 123456, Россия, Москва, ул. Ленина, 145а, 801
+                      button.icon-box
+                        img(src="images/sprite.svg#copy" class="svg-copy-dims" alt="copy")
+                tr
+                  th ИНН
+                  td 1234567890
+                tr
+                  th КПП
+                  td 123456789
+                tr
+                  th ОГРН
+                  td 1234567890987
+                tr
+                  th Расчетный счет
+                  td 12345678909876543210
+                tr
+                  th Корреспондентский счет
+                  td 12345678909876543210
+                tr
+                  th БИК
+                  td 123456789
+                tr
+                  th Банк
+                  td ПАО «Сбербанк»
+                tr
+                  th Директор
+                  td Лебедев Кирилл Александрович
+          .col-xxl-4
+            a(href='#' download class='download-requisites')
+              .icon-box
+                img(src="images/sprite.svg#download" class="svg-download-dims" alt="download")
+              .content
+                p.content-title Скачать реквизиты
+                p.content-subtitle Скачать pdf файл
+    script(src="js/swiper-bundle.min.js")
+    script(src="https://api-maps.yandex.ru/v3/?apikey=c56e2968-c0cb-4cdf-9b78-17077f253c42&lang=ru_RU")
+    script(src="js/main.min.js")
+
+

@@ -1,0 +1,84 @@
+.requisites {
+  &-title {
+    font-size: 48px;
+    font-family: 'MonstserratBold';
+    margin-bottom: 0;
+  }
+
+  &-subtitle {
+    font-size: 18px;
+    color: $second-color-text;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .table {
+    margin-top: 56px;
+    border-color: #D9D9D9;
+    --bs-table-color-state: #282828;
+
+    tbody {
+      th {
+        font-size: 16px;
+        font-family: 'MonstserratBold';
+      }
+
+      td {
+        font-size: 16px;
+      }
+
+      .adress {
+        --bs-table-bg: #FAFAFA;
+
+        .copy-adress {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+        }
+      }
+
+      .icon-box {
+        background-color: #FAFAFA;
+        border: none;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .download-requisites {
+    text-decoration: none;
+    height: 104px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    ;
+    align-items: center;
+
+    .icon-box {
+      margin-left: 24px;
+
+      .svg-download-dims {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    .content {
+      margin-left: 24px;
+
+      &-title {
+        color: $main-color-text;
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+
+      &-subtitle {
+        color: $second-color-text;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
